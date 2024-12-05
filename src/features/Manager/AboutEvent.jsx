@@ -1,8 +1,10 @@
 import React from 'react'
 import { useGeteventdetailsQuery } from '../../services/EventsApi'
+import { useParams } from 'react-router-dom';
 
 function AboutEvent() {
-    var{isLoading,data}=useGeteventdetailsQuery();
+    var {id}=useParams()
+    var{isLoading,data}=useGeteventdetailsQuery(id);
     console.log(isLoading)
     console.log(data)
   return (
@@ -10,7 +12,7 @@ function AboutEvent() {
       {
         isLoading &&  <b>Loading...</b>
       }
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
             <img src={data?.image} class="img-fluid rounded-start" alt="..."/>

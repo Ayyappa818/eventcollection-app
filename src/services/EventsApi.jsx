@@ -16,7 +16,7 @@ export const EventApi = createApi({
     geteventdetails: builder.query({
       query: (id) => ({
         url:`/events/${id}`,
-        // method:"GET",
+        method:"GET",
         // body:id,
       }),
     }),
