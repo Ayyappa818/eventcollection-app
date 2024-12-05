@@ -20,7 +20,7 @@ function EventCollection() {
               <img src={e.image} class="card-img-top" style={{height:'200px'}} alt="..."/>
               <div class="card-body">
               <h3 class="card-title">{e.category}</h3>
-              <Link to={`/event/${e._id}`}><h5 class="card-title">{e.title}</h5></Link>
+              <Link to={`/event/eventitem/${e._id}`}><h5 class="card-title">{e.title}</h5></Link>
               <p class="card-text">{e.description}</p>
             </div>
             </div>

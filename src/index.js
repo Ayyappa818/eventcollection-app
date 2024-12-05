@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element:<EventCollection></EventCollection>
       },
       {
-        path:"/event/:id",
+        path:"/event/eventitem/:id",
         element:<AboutEvent></AboutEvent>
       },
     ]
