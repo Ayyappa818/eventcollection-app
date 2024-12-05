@@ -9,15 +9,20 @@ import {
 } from "react-router-dom";
 import { store } from './app/store'
 import { Provider } from 'react-redux'
+import EventCollection from './features/Manager/EventCollection';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children:[
       {
-        path:"/",
-        element:<></>
-      }
+        path:"/event",
+        element:<EventCollection></EventCollection>
+      },
+      {
+        path:"/event/eventitem/:id",
+        element:<EventCollection></EventCollection>
+      },
     ]
   },
 ]);

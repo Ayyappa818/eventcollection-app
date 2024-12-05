@@ -6,12 +6,26 @@ export const EventApi = createApi({
   reducerPath: 'EventApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:6500/' }),
   endpoints: (builder) => ({
-    getevents: builder.query({
-      query: () => `/`,
+    geteventscollection: builder.query({
+      query: () => ({
+        url:`/events`,
+        // method:"",
+        // body:,
+      }),
+    }),
+    geteventdetails: builder.query({
+      query: (id) => ({
+        url:`/events/${id}`,
+        // method:"GET",
+        // body:id,
+      }),
     }),
   }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const {  } = EventApi
+export const { 
+  useGeteventscollectionQuery,
+  useGeteventdetailsQuery,
+ } = EventApi
