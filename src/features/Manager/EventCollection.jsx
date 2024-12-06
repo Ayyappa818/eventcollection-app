@@ -1,16 +1,22 @@
 import React from 'react'
 import { useGeteventscollectionQuery } from '../../services/EventsApi'
 import { Link } from 'react-router-dom';
+import Sideoffcanvas from './Sideoffcanvas';
 
 function EventCollection() {
     var{isLoading,data}=useGeteventscollectionQuery();
     console.log(isLoading)
     console.log(data)
   return (
-    <div>
+    <div class="d-flex">
       {
         isLoading && <b>Loading...</b>
       }
+      <div>
+        {
+          !isLoading && <Sideoffcanvas></Sideoffcanvas>
+        }
+      </div>
       <div class="row row-cols-1 row-cols-md-3 g-4 p-2 m-2">
       {
         !isLoading && data?.map((e,i)=>{

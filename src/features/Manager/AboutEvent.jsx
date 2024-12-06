@@ -26,7 +26,9 @@ function AboutEvent() {
               <h5 class="card-title">Venue :{data?.venue}</h5>
               <b class="card-text">Language :{data?.language}</b>
               <p class="card-text">Description :{data?.description}</p>
+              <b class="card-text">Eventdate :{data?.eventdate}</b>
               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <button class="card-btn btn btn-danger">Book tickets</button>
             </div>
           </div>
         </div>

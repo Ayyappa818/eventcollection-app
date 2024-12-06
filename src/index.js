@@ -11,6 +11,7 @@ import { store } from './app/store'
 import { Provider } from 'react-redux'
 import EventCollection from './features/Manager/EventCollection';
 import AboutEvent from './features/Manager/AboutEvent';
+import Sideoffcanvas from './features/Manager/Sideoffcanvas';
 const router = createBrowserRouter([
   {
     path: "/",
