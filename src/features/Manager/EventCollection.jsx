@@ -12,12 +12,12 @@ function EventCollection() {
       {
         isLoading && <b>Loading...</b>
       }
-      <div>
+      <div class="w-25">
         {
           !isLoading && <Sideoffcanvas></Sideoffcanvas>
         }
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-2 m-2">
+      <div class="row row-cols-1 row-cols-md-3 g-4 p-2 m-2 w-75">
       {
         !isLoading && data?.map((e,i)=>{
             return <div class="col">
