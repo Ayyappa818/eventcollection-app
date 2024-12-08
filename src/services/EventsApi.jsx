@@ -20,6 +20,13 @@ export const EventApi = createApi({
         // body:id,
       }),
     }),
+    addevents: builder.mutation({
+      query: (Events) => ({
+        url:`/addevents`,
+        method:"POST",
+        body:Events,
+      }),
+    }),
   }),
 })
 
@@ -28,4 +35,5 @@ export const EventApi = createApi({
 export const { 
   useGeteventscollectionQuery,
   useGeteventdetailsQuery,
+  useAddeventsMutation,
  } = EventApi
