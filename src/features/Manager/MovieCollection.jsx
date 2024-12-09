@@ -22,14 +22,14 @@ function MovieCollection() {
         <h1>Movie Collection</h1>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 p-2 m-2">
       {
-        !isLoading && data?.map((m,i)=>{
+        !isLoading && data?.map((m)=>{
             return <div class="col hov">
             <div class="card h-100">
-                <Link  to={`/movie/movieitem/${m._id}`}><img src={m.movieImage} class="card-img-top" style={{height:'200px'}} alt="..."/></Link>
+                <Link  to={`/movie/movieitem/${m._id}`}><img src={m.movieImage} class="card-img-top" style={{height:'300px'}} alt="..."/></Link>
               <div class="card-body">
               <h3 class="card-title">MovieTitle :{m.movieTitle}</h3>
               <h5 class="card-title">MovieType :{m.movieType}</h5>
-              {/* <b>Description :</b><p class="card-text">{m.description}</p> */}
+              <b>Description :</b><p class="card-text">{m.aboutUs}</p>
             </div>
             </div>
           </div>
