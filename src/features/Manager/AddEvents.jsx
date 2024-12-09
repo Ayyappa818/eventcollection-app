@@ -7,7 +7,7 @@ function AddEvents() {
     var navigate=useNavigate();
     var[AddEventFn]=useAddeventsMutation();
   return (
-    <div className='w-50 border border-2 m-auto mt-2 shadow-lg p-2'>
+    <div className='w-50 border border-2 m-auto mt-2 rounded shadow-lg p-2'>
             <Formik initialValues={{
                 category:"",
                 title:"",
@@ -19,17 +19,15 @@ function AddEvents() {
                 description:"",
                 eventdate:"",
             }}
-                    onSubmit={(values)=>{
-                        AddEventFn(values).then((res)=>{
+            onSubmit={(values)=>{
+                AddEventFn(values).then((res)=>{
                 console.log(res)
-                navigate('/event')
+                // navigate('/event')
               })
               console.log(values)
             }}
             >
-              {
-                (event)=>{
-                  <Form>
+              <Form>
               <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="category" class="form-control" id="category" placeholder="name@example.com"></Field>
                 <label for="category">Category</label>
@@ -68,8 +66,6 @@ function AddEvents() {
               </div>
               <button type='submit' class="btn btn-outline-primary">ADD Event</button>
               </Form>
-                }
-              }
             </Formik>
     </div>
   )

@@ -17,10 +17,13 @@ function EventCollection() {
           !isLoading && <Sideoffcanvas></Sideoffcanvas>
         }
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-2 m-2 w-75">
+
+      <div class="w-75 m-2 p-2">
+        <h1>Event Collection</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 p-2 m-2">
       {
         !isLoading && data?.map((e,i)=>{
-            return <div class="col">
+            return <div class="col hov">
             <div class="card h-100">
                 <Link  to={`/event/eventitem/${e._id}`}><img src={e.image} class="card-img-top" style={{height:'200px'}} alt="..."/></Link>
               {/* <img src={e.image} class="card-img-top" style={{height:'200px'}} alt="..."/> */}
@@ -34,6 +37,8 @@ function EventCollection() {
         })
       }
       </div>
+      </div>
+
     </div>
   )
 }

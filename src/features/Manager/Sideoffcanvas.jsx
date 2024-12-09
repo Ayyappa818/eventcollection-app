@@ -74,11 +74,11 @@ function Sideoffcanvas() {
   <br />
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         Categories
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
       <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
@@ -96,11 +96,11 @@ function Sideoffcanvas() {
   <br />
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         Price
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
       <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
