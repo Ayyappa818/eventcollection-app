@@ -12,6 +12,8 @@ import { Provider } from 'react-redux'
 import EventCollection from './features/Manager/EventCollection';
 import AboutEvent from './features/Manager/AboutEvent';
 import AddEvents from './features/Manager/AddEvents';
+import MovieCollection from './features/Manager/MovieCollection';
+import AboutMovie from './features/Manager/AboutMovie';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path:"/addevent",
         element:<AddEvents></AddEvents>
+      },
+      {
+        path:"/movie",
+        element:<MovieCollection></MovieCollection>
+      },
+      {
+        path:"/movie/movieitem/:id",
+        element:<AboutMovie></AboutMovie>
       }
     ]
   },

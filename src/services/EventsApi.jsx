@@ -27,6 +27,18 @@ export const EventApi = createApi({
         body:Events,
       }),
     }),
+    getmoviescollection: builder.query({
+      query: () => ({
+        url:`/movies`,
+      }),
+    }),
+    getmoviedetails: builder.query({
+      query: (id) => ({
+        url:`/movies/${id}`,
+        method:"GET",
+        // body:id,
+      }),
+    }),
   }),
 })
 
@@ -36,4 +48,6 @@ export const {
   useGeteventscollectionQuery,
   useGeteventdetailsQuery,
   useAddeventsMutation,
+  useGetmoviescollectionQuery,
+  useGetmoviedetailsQuery,
  } = EventApi
