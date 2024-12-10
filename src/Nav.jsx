@@ -16,7 +16,7 @@ function Nav() {
           <li><a href="/event" class="nav-link px-2 text-white">Events</a></li>
           <li><a href="/movie" class="nav-link px-2 text-white">Movies</a></li>
           <li><a href="/addevent" class="nav-link px-2 text-white">Add Event</a></li>
-          <li><a href="/" class="nav-link px-2 text-white">About</a></li>
+          <li><a href="/addmovie" class="nav-link px-2 text-white">Add Movie</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">

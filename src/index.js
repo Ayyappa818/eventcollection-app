@@ -14,6 +14,7 @@ import AboutEvent from './features/Manager/AboutEvent';
 import AddEvents from './features/Manager/AddEvents';
 import MovieCollection from './features/Manager/MovieCollection';
 import AboutMovie from './features/Manager/AboutMovie';
+import AddMovies from './features/Manager/AddMovies';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path:"/movie/movieitem/:id",
         element:<AboutMovie></AboutMovie>
+      },
+      {
+        path:"/addmovie",
+        element:<AddMovies></AddMovies>
       }
     ]
   },

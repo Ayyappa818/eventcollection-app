@@ -39,6 +39,13 @@ export const EventApi = createApi({
         // body:id,
       }),
     }),
+    addmovies: builder.mutation({
+      query: (Movies) => ({
+        url:`/addmovies`,
+        method:"POST",
+        body:Movies,
+      }),
+    }),
   }),
 })
 
@@ -50,4 +57,5 @@ export const {
   useAddeventsMutation,
   useGetmoviescollectionQuery,
   useGetmoviedetailsQuery,
+  useAddmoviesMutation,
  } = EventApi

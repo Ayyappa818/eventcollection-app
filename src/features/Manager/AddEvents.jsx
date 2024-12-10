@@ -22,7 +22,7 @@ function AddEvents() {
             onSubmit={(values)=>{
                 AddEventFn(values).then((res)=>{
                 console.log(res)
-                // navigate('/event')
+                navigate('/event')
               })
               console.log(values)
             }}
