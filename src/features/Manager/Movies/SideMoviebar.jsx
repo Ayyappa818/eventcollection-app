@@ -22,10 +22,28 @@ function SideMoviebar() {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Location
+        Language
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body p-2 m-2">
+        <button class="btn btn-outline-primary">Telugu</button>
+        <button class="btn btn-outline-primary">English</button>
+        <button class="btn btn-outline-primary">Tamil</button>
+        <button class="btn btn-outline-primary">Hindi</button>
+        <button class="btn btn-outline-primary">Kannada</button>
+        <button class="btn btn-outline-primary">Malayalam</button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Geners
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
         
       </div>
@@ -34,44 +52,13 @@ function SideMoviebar() {
   <br />
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Language
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div class="accordion-item">
-    <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Categories
+        Format
       </button>
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        
       </div>
     </div>
   </div>
@@ -84,22 +71,13 @@ function SideMoviebar() {
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        
       </div>
     </div>
   </div>
 </div>
 <br />
-<button type="button" class="btn btn-outline-danger">Browse by Venue</button>
+<button type="button" class="btn btn-outline-danger">Browse by Cinemas</button>
     </div>
   )
 }

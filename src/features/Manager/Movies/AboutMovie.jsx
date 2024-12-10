@@ -29,7 +29,7 @@ function AboutMovie() {
               }
               </div>
               <br />
-              <div class="border border-1 border-secondary rounded text-center bg-light m-2" style={{width:'15rem'}}>
+              <div class="border border-1 border-secondary rounded text-center bg-light m-2" style={{width:'20rem'}}>
               {
               data?.language.map((l)=>{
                 return <b>{l},</b>
