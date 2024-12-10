@@ -9,12 +9,12 @@ import {
 } from "react-router-dom";
 import { store } from './app/store'
 import { Provider } from 'react-redux'
-import EventCollection from './features/Manager/EventCollection';
-import AboutEvent from './features/Manager/AboutEvent';
-import AddEvents from './features/Manager/AddEvents';
-import MovieCollection from './features/Manager/MovieCollection';
-import AboutMovie from './features/Manager/AboutMovie';
-import AddMovies from './features/Manager/AddMovies';
+import EventCollection from './features/Manager/Event/EventCollection';
+import AboutEvent from './features/Manager/Event/AboutEvent';
+import AddEvents from './features/Manager/Event/AddEvents';
+import MovieCollection from './features/Manager/Movies/MovieCollection';
+import AboutMovie from './features/Manager/Movies/AboutMovie';
+import AddMovies from './features/Manager/Movies/AddMovies';
 const router = createBrowserRouter([
   {
     path: "/",

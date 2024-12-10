@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../services/EventsApi'
-import Sideoffcanvas from './Sideoffcanvas';
 import { Link } from 'react-router-dom';
+import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../../services/EventsApi';
+import SideMoviebar from './SideMoviebar';
 
 function MovieCollection() {
   var {isLoading,data}=useGetmoviescollectionQuery();
   var[MovieFn]=useLazyGetmoviescollectionQuery();
   useEffect(()=>{
     MovieFn();
-  },[])
+  },[MovieFn])
   console.log(isLoading)
   console.log(data)
   return (
@@ -18,7 +18,7 @@ function MovieCollection() {
       }
       <div class="w-25">
         {
-          !isLoading && <Sideoffcanvas></Sideoffcanvas>
+          !isLoading && <SideMoviebar></SideMoviebar>
         }
       </div>
 

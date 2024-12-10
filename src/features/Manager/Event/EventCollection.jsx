@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import { useGeteventscollectionQuery, useLazyGeteventscollectionQuery } from '../../services/EventsApi'
 import { Link } from 'react-router-dom';
-import Sideoffcanvas from './Sideoffcanvas';
+import { useGeteventscollectionQuery, useLazyGeteventscollectionQuery } from '../../../services/EventsApi';
+import SideEventbar from './SideEventbar';
 
 function EventCollection() {
     var{isLoading,data}=useGeteventscollectionQuery();
     var [EventFn]=useLazyGeteventscollectionQuery();
     useEffect(()=>{
       EventFn();
-    },[])
+    },[EventFn])
     console.log(isLoading)
     console.log(data)
   return (
@@ -18,7 +18,7 @@ function EventCollection() {
       }
       <div class="w-25">
         {
-          !isLoading && <Sideoffcanvas></Sideoffcanvas>
+          !isLoading && <SideEventbar></SideEventbar>
         }
       </div>
 

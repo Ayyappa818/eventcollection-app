@@ -1,6 +1,6 @@
 import React from 'react'
-import { useGeteventdetailsQuery } from '../../services/EventsApi'
 import { useParams } from 'react-router-dom';
+import { useGeteventdetailsQuery } from '../../../services/EventsApi';
 
 function AboutEvent() {
     var {id}=useParams()

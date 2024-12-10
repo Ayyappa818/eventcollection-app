@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik,Form,Field } from 'formik'
-import { useAddeventsMutation } from '../../services/EventsApi';
 import { useNavigate } from 'react-router-dom';
+import { useAddeventsMutation } from '../../../services/EventsApi';
 
 function AddEvents() {
     var[AddEventFn]=useAddeventsMutation();

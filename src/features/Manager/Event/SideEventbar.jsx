@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sideoffcanvas() {
+function SideEventbar() {
   return (
     <div class='w-100 p-2 m-2'>
         <div><h3>Filter</h3></div>
@@ -13,16 +13,7 @@ function Sideoffcanvas() {
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        
       <input type="date" name="" id="" />
       </div>
     </div>
@@ -36,16 +27,7 @@ function Sideoffcanvas() {
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        
       </div>
     </div>
   </div>
@@ -118,22 +100,8 @@ function Sideoffcanvas() {
 </div>
 <br />
 <button type="button" class="btn btn-outline-danger">Browse by Venue</button>
-        {/* <div className=''>
-        <p>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-            Date
-          </button>
-        </p>
-        <div>
-          <div class="collapse collapse-horizontal" id="collapseWidthExample">
-            <div class="card card-body" style={{width:300}}>
-              This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-            </div>
-          </div>
-        </div>
-        </div> */}
-    </div>
+</div>
   )
 }
 
-export default Sideoffcanvas
+export default SideEventbar
