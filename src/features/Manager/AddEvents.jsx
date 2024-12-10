@@ -1,11 +1,11 @@
 import React from 'react'
 import { Formik,Form,Field } from 'formik'
-import { useNavigate } from 'react-router-dom'
 import { useAddeventsMutation } from '../../services/EventsApi';
+import { useNavigate } from 'react-router-dom';
 
 function AddEvents() {
-    var navigate=useNavigate();
     var[AddEventFn]=useAddeventsMutation();
+    var navigate=useNavigate();
   return (
     <div className='w-50 border border-2 m-auto mt-2 rounded shadow-lg p-2'>
             <Formik initialValues={{

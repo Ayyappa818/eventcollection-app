@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // Define a service using a base URL and expected endpoints
 export const EventApi = createApi({
   reducerPath: 'EventApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:6500/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:6600/' }),
   endpoints: (builder) => ({
     geteventscollection: builder.query({
       query: () => ({
