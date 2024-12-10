@@ -16,7 +16,7 @@ function AddMovies() {
                 movieType:String,
                 movieCensor:String,
                 releaseDate:String,
-                language:String,
+                language:Array,
                 aboutUs:String,
                 movieFormats:Array
             }}
@@ -66,10 +66,10 @@ function AddMovies() {
                 <label for="aboutUs">aboutUs</label>
               </div>
               <div class="form-floating mb-3 p-2 m-2">
-                <Field type="text" name="aboutUs" class="form-control" id="aboutUs" placeholder="name@example.com"></Field>
-                <label for="aboutUs">aboutUs</label>
+                <Field type="text" name="movieFormats" class="form-control" id="movieFormats" placeholder="name@example.com"></Field>
+                <label for="movieFormats">MovieFormats</label>
               </div>
-              <button type='submit' class="btn btn-outline-primary">ADD Event</button>
+              <button type='submit' class="btn btn-outline-primary">ADD Movie</button>
               </Form>
             </Formik>
     </div>
