@@ -1,10 +1,14 @@
-import React from 'react'
-import { useGeteventscollectionQuery } from '../../services/EventsApi'
+import React, { useEffect } from 'react'
+import { useGeteventscollectionQuery, useLazyGeteventscollectionQuery } from '../../services/EventsApi'
 import { Link } from 'react-router-dom';
 import Sideoffcanvas from './Sideoffcanvas';
 
 function EventCollection() {
     var{isLoading,data}=useGeteventscollectionQuery();
+    var [EventFn]=useLazyGeteventscollectionQuery();
+    useEffect(()=>{
+      EventFn();
+    },[])
     console.log(isLoading)
     console.log(data)
   return (

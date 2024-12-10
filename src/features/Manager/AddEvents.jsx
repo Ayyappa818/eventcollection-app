@@ -20,10 +20,8 @@ function AddEvents() {
                 eventdate:"",
             }}
             onSubmit={(values)=>{
-                AddEventFn(values).then((res)=>{
-                console.log(res)
+                AddEventFn(values)
                 navigate('/event')
-              })
               console.log(values)
             }}
             >

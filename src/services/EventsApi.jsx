@@ -53,9 +53,11 @@ export const EventApi = createApi({
 // auto-generated based on the defined endpoints
 export const { 
   useGeteventscollectionQuery,
+  useLazyGeteventscollectionQuery,
   useGeteventdetailsQuery,
   useAddeventsMutation,
   useGetmoviescollectionQuery,
+  useLazyGetmoviescollectionQuery,
   useGetmoviedetailsQuery,
   useAddmoviesMutation,
  } = EventApi

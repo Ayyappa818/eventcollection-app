@@ -21,10 +21,8 @@ function AddMovies() {
                 movieFormats:Array
             }}
             onSubmit={(values)=>{
-                AddMovieFn(values).then((res)=>{
-                console.log(res)
-                navigate('/movie')
-              })
+                AddMovieFn(values)
+                navigate("/movie")
               console.log(values)
             }}
             >

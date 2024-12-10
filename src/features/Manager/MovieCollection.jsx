@@ -1,10 +1,14 @@
-import React from 'react'
-import { useGetmoviescollectionQuery } from '../../services/EventsApi'
+import React, { useEffect } from 'react'
+import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../services/EventsApi'
 import Sideoffcanvas from './Sideoffcanvas';
 import { Link } from 'react-router-dom';
 
 function MovieCollection() {
   var {isLoading,data}=useGetmoviescollectionQuery();
+  var[MovieFn]=useLazyGetmoviescollectionQuery();
+  useEffect(()=>{
+    MovieFn();
+  },[])
   console.log(isLoading)
   console.log(data)
   return (
