@@ -76,9 +76,11 @@ function SideMoviebar() {
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        <button class="btn btn-outline-primary p-1 m-1">2D</button>
-        <button class="btn btn-outline-primary p-1 m-1">3D</button>
-        <button class="btn btn-outline-primary p-1 m-1">4DX</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieFormats:'2D'})}}>2D</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieFormats:'3D'})}}>3D</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieFormats:'4DX'})}}>4DX</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieFormats:'Dolby Atmos'})}}>Dolby Atmos</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieFormats:'IMAX'})}}>IMAX</button>
       </div>
     </div>
   </div>

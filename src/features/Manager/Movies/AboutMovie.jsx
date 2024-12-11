@@ -41,7 +41,7 @@ function AboutMovie() {
               <>.</>
               <b class="card-title font-monospace">{
               data?.movieType.map((t)=>{
-                return <b>{t}</b>
+                return <b>{t},</b>
               })
               }</b>
               <>.</>
