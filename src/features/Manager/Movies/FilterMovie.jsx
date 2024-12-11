@@ -13,6 +13,7 @@ function FilterMovie() {
        var obj={}
        obj[ar[0]]=ar[1]
        arr.push(obj)
+      //  console.log(obj)
        console.log(arr)
       })
    },[search])
