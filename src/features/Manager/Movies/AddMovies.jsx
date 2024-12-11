@@ -13,7 +13,7 @@ function AddMovies() {
                 movieTitle:String,
                 price:String,
                 movieDuration:String,
-                movieType:String,
+                movieType:Array,
                 movieCensor:String,
                 releaseDate:String,
                 language:Array,

@@ -56,14 +56,14 @@ function SideMoviebar() {
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        <button class="btn btn-outline-primary p-1 m-1">Drama</button>
-        <button class="btn btn-outline-primary p-1 m-1">Action</button>
-        <button class="btn btn-outline-primary p-1 m-1">Thiller</button>
-        <button class="btn btn-outline-primary p-1 m-1">Romantic</button>
-        <button class="btn btn-outline-primary p-1 m-1">Comedy</button>
-        <button class="btn btn-outline-primary p-1 m-1">Crime</button>
-        <button class="btn btn-outline-primary p-1 m-1">Adventure</button>
-        <button class="btn btn-outline-primary p-1 m-1">Animation</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Drama'})}}>Drama</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Action'})}}>Action</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Thiller'})}}>Thiller</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Romantic'})}}>Romantic</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Comedy'})}}>Comedy</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Crime'})}}>Crime</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Adventure'})}}>Adventure</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Animation'})}}>Animation</button>
       </div>
     </div>
   </div>
