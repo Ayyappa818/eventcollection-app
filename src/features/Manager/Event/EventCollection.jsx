@@ -12,17 +12,11 @@ function EventCollection() {
     console.log(isLoading)
     console.log(data)
   return (
-    <div class="d-flex">
+    <div class="">
       {
         isLoading && <b>Loading...</b>
       }
-      {/* <div class="w-25">
-        {
-          !isLoading && <SideEventbar></SideEventbar>
-        }
-      </div> */}
-
-      <div class="w-75 m-2 p-2">
+      {/* <div class="m-2 p-2">
         <h1>Event Collection</h1>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 p-2 m-2">
       {
@@ -40,14 +34,14 @@ function EventCollection() {
         })
       }
       </div>
-      </div>
+      </div> */}
       
-      {/* <div class="w-75 m-2 p-2">
+      <div class="">
         <h1>Event Collection</h1>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 p-2 m-2">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 p-2 m-2">
       {
         !isLoading && data?.map((e,i)=>{
-            return <div class="col hov rounded">
+            return <div class="col hov p-0 m-2 rounded">
             <div class="card h-100">
                 <Link  to={`/event/eventitem/${e._id}`}><img src={e.image} class="card-img-top" style={{height:'200px'}} alt="..."/></Link>
               <div class="card-body">
@@ -60,7 +54,7 @@ function EventCollection() {
         })
       }
       </div>
-      </div> */}
+      </div>
 
     </div>
   )
