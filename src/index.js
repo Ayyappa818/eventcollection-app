@@ -15,14 +15,28 @@ import AddEvents from './features/Manager/Event/AddEvents';
 import MovieCollection from './features/Manager/Movies/MovieCollection';
 import AboutMovie from './features/Manager/Movies/AboutMovie';
 import AddMovies from './features/Manager/Movies/AddMovies';
+import Allmovies from './features/Manager/Movies/Allmovies';
+import FilterMovie from './features/Manager/Movies/FilterMovie';
+import Allevents from './features/Manager/Event/Allevents';
+import FilterEvent from './features/Manager/Event/FilterEvent';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children:[
       {
-        path:"/event",
-        element:<EventCollection></EventCollection>
+        path:"/allevent",
+        element:<Allevents></Allevents>,
+        children:[
+          {
+            path:"/allevent/",
+            element:<EventCollection></EventCollection>
+          },
+          {
+            path:"/allevent/filterevents",
+            element:<FilterEvent></FilterEvent>
+          }
+        ]
       },
       {
         path:"/event/eventitem/:id",
@@ -33,8 +47,18 @@ const router = createBrowserRouter([
         element:<AddEvents></AddEvents>
       },
       {
-        path:"/movie",
-        element:<MovieCollection></MovieCollection>
+        path:"/allmovie",
+        element:<Allmovies></Allmovies>,
+        children:[
+          {
+            path:"/allmovie/",
+            element:<MovieCollection></MovieCollection>
+          },
+          {
+            path:"/allmovie/filtermovies",
+            element:<FilterMovie></FilterMovie>
+          }
+        ]
       },
       {
         path:"/movie/movieitem/:id",

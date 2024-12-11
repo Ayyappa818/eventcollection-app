@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import { useGetmoviedetailsQuery } from '../../../services/EventsApi';
+import { useGetmoviedetailsQuery } from '../../../services/MoviesApi';
 
 function AboutMovie() {
     var {id}=useParams();

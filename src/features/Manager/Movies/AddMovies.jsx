@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik,Form,Field } from 'formik'
 import { useNavigate } from 'react-router-dom';
-import { useAddmoviesMutation } from '../../../services/EventsApi';
+import { useAddmoviesMutation } from '../../../services/MoviesApi';
 
 function AddMovies() {
     var[AddMovieFn]=useAddmoviesMutation();
@@ -22,7 +22,7 @@ function AddMovies() {
             }}
             onSubmit={(values)=>{
                 AddMovieFn(values)
-                navigate("/movie")
+                navigate("/allmovie/")
               console.log(values)
             }}
             >

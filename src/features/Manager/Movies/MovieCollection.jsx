@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../../services/EventsApi';
-import SideMoviebar from './SideMoviebar';
+import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../../services/MoviesApi';
 
 function MovieCollection() {
   var {isLoading,data}=useGetmoviescollectionQuery();
@@ -16,11 +15,11 @@ function MovieCollection() {
       {
         isLoading && <b>Loading...</b>
       }
-      <div class="w-25">
+      {/* <div class="w-25">
         {
           !isLoading && <SideMoviebar></SideMoviebar>
         }
-      </div>
+      </div> */}
 
       <div class="w-75 m-2 p-2">
         <h1>Movie Collection</h1>
@@ -31,9 +30,14 @@ function MovieCollection() {
             <div class="card h-100">
                 <Link  to={`/movie/movieitem/${m._id}`}><img src={m.movieImage} class="card-img-top" style={{height:'300px'}} alt="..."/></Link>
               <div class="card-body">
-              <h3 class="card-title">MovieTitle :{m.movieTitle}</h3>
-              <h5 class="card-title">MovieType :{m.movieType}</h5>
-              <b>Description :</b><p class="card-text">{m.aboutUs}</p>
+              <h3 class="card-title">{m.movieTitle}</h3>
+              <p class="card-title">{m.movieCensor}</p>
+              <p class="card-title">{m.releaseDate}</p>
+              {/* <div class="card-title">{
+              m.language.map((l)=>{
+                return <p>{l}</p>
+              })
+              }</div> */}
             </div>
             </div>
           </div>

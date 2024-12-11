@@ -13,8 +13,10 @@ function SideEventbar() {
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        
-      <input type="date" name="" id="" />
+        <button class="btn btn-outline-primary p-1 m-1">Today</button>
+        <button class="btn btn-outline-primary p-1 m-1">Tomorrow</button>
+        <button class="btn btn-outline-primary p-1 m-1">This Weekend</button><br />
+        <input type="date" name="" id="" />
       </div>
     </div>
   </div>
@@ -22,12 +24,18 @@ function SideEventbar() {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Location
+        Languages
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        
+        <button class="btn btn-outline-primary p-1 m-1">Telugu</button>
+        <button class="btn btn-outline-primary p-1 m-1">English</button>
+        <button class="btn btn-outline-primary p-1 m-1">Tamil</button>
+        <button class="btn btn-outline-primary p-1 m-1">Hindi</button>
+        <button class="btn btn-outline-primary p-1 m-1">Kannada</button>
+        <button class="btn btn-outline-primary p-1 m-1">Malayalam</button>
+        <button class="btn btn-outline-primary p-1 m-1">Bengali</button>
       </div>
     </div>
   </div>
@@ -35,21 +43,20 @@ function SideEventbar() {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Language
+        Categories
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        <button class="btn btn-outline-primary p-1 m-1">Comedy Shows</button>
+        <button class="btn btn-outline-primary p-1 m-1">Music Shows</button>
+        <button class="btn btn-outline-primary p-1 m-1">Workshops</button>
+        <button class="btn btn-outline-primary p-1 m-1">New Year Parties</button>
+        <button class="btn btn-outline-primary p-1 m-1">Kids</button>
+        <button class="btn btn-outline-primary p-1 m-1">Meetups</button>
+        <button class="btn btn-outline-primary p-1 m-1">Performances</button>
+        <button class="btn btn-outline-primary p-1 m-1">Screening</button>
+        <button class="btn btn-outline-primary p-1 m-1">Exhibitions</button>
       </div>
     </div>
   </div>
@@ -57,21 +64,17 @@ function SideEventbar() {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Categories
+        More Filters
       </button>
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        <button class="btn btn-outline-primary p-1 m-1">Telugu</button>
+        <button class="btn btn-outline-primary p-1 m-1">English</button>
+        <button class="btn btn-outline-primary p-1 m-1">Tamil</button>
+        <button class="btn btn-outline-primary p-1 m-1">Hindi</button>
+        <button class="btn btn-outline-primary p-1 m-1">Kannada</button>
+        <button class="btn btn-outline-primary p-1 m-1">Malayalam</button>
       </div>
     </div>
   </div>
@@ -84,16 +87,10 @@ function SideEventbar() {
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck1">Today</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck2">Tomorrow</label>
-      
-        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"/>
-        <label class="btn btn-outline-primary rounded m-2 p-2" for="btncheck3">This Weekend</label>
-      </div>
+        <button class="btn btn-outline-primary p-1 m-1">Free</button>
+        <button class="btn btn-outline-primary p-1 m-1">0-500</button>
+        <button class="btn btn-outline-primary p-1 m-1">501-2000</button>
+        <button class="btn btn-outline-primary p-1 m-1">Above 2000</button>
       </div>
     </div>
   </div>

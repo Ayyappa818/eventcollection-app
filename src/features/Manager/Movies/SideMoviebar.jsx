@@ -1,6 +1,17 @@
 import React from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 
 function SideMoviebar() {
+  var [searchparams]=useSearchParams()
+  var navigate=useNavigate()
+  function filtmovie(ev,obj){
+   searchparams.append(Object.keys(obj)[0],Object.values(obj)[0])
+   navigate({
+    pathname:'/allmovie/filtermovies',
+    search:searchparams.toString()
+   })
+
+  }
   return (
     <div class='w-100 p-2 m-2'>
         <div><h3>Filter</h3></div>
@@ -26,13 +37,13 @@ function SideMoviebar() {
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body p-2 m-2">
-        <button class="btn btn-outline-primary p-1 m-1">Telugu</button>
-        <button class="btn btn-outline-primary p-1 m-1">English</button>
-        <button class="btn btn-outline-primary p-1 m-1">Tamil</button>
-        <button class="btn btn-outline-primary p-1 m-1">Hindi</button>
-        <button class="btn btn-outline-primary p-1 m-1">Kannada</button>
-        <button class="btn btn-outline-primary p-1 m-1">Malayalam</button>
+      <div class="accordion-body p-2 m-2"> 
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'Telugu'})}}>Telugu</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'English'})}}>English</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'Tamil'})}}>Tamil</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'Hindi'})}}>Hindi</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'Kannada'})}}>Kannada</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{language:'Malayalam'})}}>Malayalam</button>
       </div>
     </div>
   </div>

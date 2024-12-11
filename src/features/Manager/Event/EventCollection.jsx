@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { useGeteventscollectionQuery, useLazyGeteventscollectionQuery } from '../../../services/EventsApi';
-import SideEventbar from './SideEventbar';
+// import SideEventbar from './SideEventbar';
 
 function EventCollection() {
     var{isLoading,data}=useGeteventscollectionQuery();
@@ -16,11 +16,11 @@ function EventCollection() {
       {
         isLoading && <b>Loading...</b>
       }
-      <div class="w-25">
+      {/* <div class="w-25">
         {
           !isLoading && <SideEventbar></SideEventbar>
         }
-      </div>
+      </div> */}
 
       <div class="w-75 m-2 p-2">
         <h1>Event Collection</h1>
