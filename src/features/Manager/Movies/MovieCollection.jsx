@@ -55,7 +55,6 @@ function MovieCollection() {
       }
       </div>
       </div>
-
     </div>
   )
 }
