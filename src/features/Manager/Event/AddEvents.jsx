@@ -21,7 +21,7 @@ function AddEvents() {
             }}
             onSubmit={(values)=>{
                 AddEventFn(values)
-                navigate('/event')
+                navigate('/allevent/')
               console.log(values)
             }}
             >
