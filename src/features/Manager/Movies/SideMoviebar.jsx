@@ -64,6 +64,7 @@ function SideMoviebar() {
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Crime'})}}>Crime</button>
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Adventure'})}}>Adventure</button>
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Animation'})}}>Animation</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtmovie(event,{movieType:'Anime'})}}>Anime</button>
       </div>
     </div>
   </div>

@@ -25,6 +25,13 @@ export const MoviesApi = createApi({
           body:Movies,
         }),
       }),
+      getfiltermovies: builder.mutation({
+        query: (data) => ({
+          url:`/mfilter`,
+          method:"POST",
+          body:data,
+        }),
+      }),
   }),
 })
 
@@ -35,4 +42,5 @@ export const {
     useLazyGetmoviescollectionQuery,
     useGetmoviedetailsQuery,
     useAddmoviesMutation,
+    useGetfiltermoviesMutation,
  } = MoviesApi

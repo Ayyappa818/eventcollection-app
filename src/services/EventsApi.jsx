@@ -27,6 +27,13 @@ export const EventApi = createApi({
         body:Events,
       }),
     }),
+    getfilterevents: builder.mutation({
+      query: (data) => ({
+        url:`/efilter`,
+        method:'POST',
+        body:data,
+      }),
+    }),
   }),
 })
 
@@ -37,4 +44,5 @@ export const {
   useLazyGeteventscollectionQuery,
   useGeteventdetailsQuery,
   useAddeventsMutation,
+  useGetfiltereventsMutation,
  } = EventApi
