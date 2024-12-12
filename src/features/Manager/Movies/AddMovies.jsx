@@ -47,9 +47,27 @@ function AddMovies() {
                 <Field type="text" name="movieType" class="form-control" id="movieType" placeholder="name@example.com"></Field>
                 <label for="movieType">MovieType</label>
               </div>
-              <div class="form-floating mb-3 p-2 m-2">
+              {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="movieCensor" class="form-control" id="movieCensor" placeholder="name@example.com"></Field>
                 <label for="movieCensor">MovieCensor</label>
+              </div> */}
+              <div class='form-group mb-3 p-2 m-2'>
+                <h6>Select Movie Censor</h6>
+                <label>
+                  <Field name="movieCensor" type='radio' value='U/A' className='form-check-input'></Field>
+                  {" "}
+                  U/A
+                </label>
+                <label>
+                  <Field name="movieCensor" type='radio' value='A' className='form-check-input'></Field>
+                  {" "}
+                  A
+                </label>
+                <label>
+                  <Field name="movieCensor" type='radio' value='U' className='form-check-input'></Field>
+                  {" "}
+                  U
+                </label>
               </div>
               <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="releaseDate" class="form-control" id="releaseDate" placeholder="name@example.com"></Field>
@@ -63,9 +81,37 @@ function AddMovies() {
                 <Field type="text" name="aboutUs" class="form-control" id="aboutUs" placeholder="name@example.com"></Field>
                 <label for="aboutUs">aboutUs</label>
               </div>
-              <div class="form-floating mb-3 p-2 m-2">
+              {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="movieFormats" class="form-control" id="movieFormats" placeholder="name@example.com"></Field>
                 <label for="movieFormats">MovieFormats</label>
+              </div> */}
+              <div class='form-group mb-3 p-2 m-2'>
+                <h6>Select Movie Formats</h6>
+                <label>
+                  <Field name="movieFormats" type='checkbox' value='2D' className='form-check-input'></Field>
+                  {" "}
+                  2D
+                </label>
+                <label>
+                  <Field name="movieFormats" type='checkbox' value='3D' className='form-check-input'></Field>
+                  {" "}
+                  3D
+                </label>
+                <label>
+                  <Field name="movieFormats" type='checkbox' value='4DX' className='form-check-input'></Field>
+                  {" "}
+                  4DX
+                </label>
+                <label>
+                  <Field name="movieFormats" type='checkbox' value='IMAX' className='form-check-input'></Field>
+                  {" "}
+                  IMAX
+                </label>
+                <label>
+                  <Field name="movieFormats" type='checkbox' value='Dolby Atmos' className='form-check-input'></Field>
+                  {" "}
+                  Dolby Atmos
+                </label>
               </div>
               <button type='submit' class="btn btn-outline-primary">ADD Movie</button>
               </Form>
