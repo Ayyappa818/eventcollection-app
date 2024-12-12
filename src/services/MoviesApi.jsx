@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // Define a service using a base URL and expected endpoints
 export const MoviesApi = createApi({
   reducerPath: 'MoviesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:6600/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:6400/' }),
   endpoints: (builder) => ({
     getmoviescollection: builder.query({
         query: () => ({

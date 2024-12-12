@@ -26,10 +26,53 @@ function AddEvents() {
             }}
             >
               <Form>
-              <div class="form-floating mb-3 p-2 m-2">
+                <div class='form-group mb-3 p-2 m-2'>
+                  <h6>Select Event Category</h6>
+                  <label>
+                    <Field name="category" type='radio' value='Music' className='form-check-input'></Field>
+                    {" "}
+                    Music
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Concert' className='form-check-input'></Field>
+                    {" "}
+                    Concert
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Festival' className='form-check-input'></Field>
+                    {" "}
+                    Festival
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Comedy' className='form-check-input'></Field>
+                    {" "}
+                    Comedy
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Fashion' className='form-check-input'></Field>
+                    {" "}
+                    Fashion
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Business' className='form-check-input'></Field>
+                    {" "}
+                    Business
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Education' className='form-check-input'></Field>
+                    {" "}
+                    Education
+                  </label>
+                  <label>
+                    <Field name="category" type='radio' value='Sports' className='form-check-input'></Field>
+                    {" "}
+                    Sports
+                  </label>
+                </div>
+              {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="category" class="form-control" id="category" placeholder="name@example.com"></Field>
                 <label for="category">Category</label>
-              </div>
+              </div> */}
               <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="title" class="form-control" id="title" placeholder="name@example.com"></Field>
                 <label for="title">Title</label>
