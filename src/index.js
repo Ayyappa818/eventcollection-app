@@ -19,11 +19,16 @@ import Allmovies from './features/Manager/Movies/Allmovies';
 import FilterMovie from './features/Manager/Movies/FilterMovie';
 import Allevents from './features/Manager/Event/Allevents';
 import FilterEvent from './features/Manager/Event/FilterEvent';
+import Home from './Home';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children:[
+      {
+        path:'/',
+        element:<Home></Home>
+      },
       {
         path:"/allevent",
         element:<Allevents></Allevents>,
