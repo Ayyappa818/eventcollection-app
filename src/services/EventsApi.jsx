@@ -34,6 +34,13 @@ export const EventApi = createApi({
         body:data,
       }),
     }),
+    getfiltertitle: builder.query({
+      query: (id) => ({
+        url:`/efilter/:id`,
+        method:'GET',
+        body:id,
+      }),
+    }),
   }),
 })
 
@@ -45,4 +52,5 @@ export const {
   useGeteventdetailsQuery,
   useAddeventsMutation,
   useGetfiltereventsMutation,
+  useGetfiltertitleQuery,
  } = EventApi

@@ -35,8 +35,9 @@ function FilterMovie() {
         moviefilter?.map((item)=>{
             return <div class="col hov p-0 m-2 rounded">
             <div class="card h-100">
-                {/* <Link  to={`/movie/movieitem/${item}`}></Link> */}
+                <Link  to={`/movie/movieitem/${item._id}`}>
                 <img src={item.movieImage} class="card-img-top" style={{height:'300px'}} alt="..."/>
+                </Link>
               <div class="card-body">
               <h3 class="card-title">{item.movieTitle}</h3>
               <p class="card-title">{item.movieCensor}</p>

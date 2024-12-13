@@ -20,6 +20,7 @@ import FilterMovie from './features/Manager/Movies/FilterMovie';
 import Allevents from './features/Manager/Event/Allevents';
 import FilterEvent from './features/Manager/Event/FilterEvent';
 import Home from './Home';
+import AboutFilterEvent from './features/Manager/Event/AboutFilterEvent';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
         path:"/addevent",
         element:<AddEvents></AddEvents>
       },
+      // {
+      //   path:'/allevent/filterevents/:id',
+      //   element:<AboutFilterEvent></AboutFilterEvent>
+      // },
+      // Movies
       {
         path:"/allmovie",
         element:<Allmovies></Allmovies>,

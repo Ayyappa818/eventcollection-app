@@ -34,8 +34,9 @@ function FilterEvent() {
           eventfilter?.map((item)=>{
             return <div class="col hov p-0 m-2 rounded">
             <div class="card h-100">
-            {/* <Link to={`/event/eventitem/${item.title}`}></Link> */}
+            <Link to={`/event/eventitem/${item._id}`}>
               <img src={item.image} style={{height:'200px'}} class="card-img-top" alt="..."/>
+            </Link>
               <div class="card-body">
                 <h3 class="card-title">{item.category}</h3>
                 <h5 class="card-title">{item.title}</h5>
