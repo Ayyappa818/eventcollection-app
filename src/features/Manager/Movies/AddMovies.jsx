@@ -156,9 +156,47 @@ function AddMovies() {
                 <Field type="text" name="releaseDate" class="form-control" id="releaseDate" placeholder="name@example.com"></Field>
                 <label for="releaseDate">ReleaseDate</label>
               </div>
-              <div class="form-floating mb-3 p-2 m-2">
+              {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="language"  class="form-control" id="language" placeholder="name@example.com"></Field>
                 <label for="language">Language</label>
+              </div> */}
+              <div class='form-group mb-3 p-2 m-2'>
+                <h6>Select Movie Language</h6>
+                <label>
+                  <Field name="language" type='checkbox' value='Telugu' className='form-check-input'></Field>
+                  {" "}
+                  Telugu
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='Tamil' className='form-check-input'></Field>
+                  {" "}
+                  Tamil
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='Hindi' className='form-check-input'></Field>
+                  {" "}
+                  Hindi
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='English' className='form-check-input'></Field>
+                  {" "}
+                  English
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='Japanese' className='form-check-input'></Field>
+                  {" "}
+                  Japanese
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='Malayalam' className='form-check-input'></Field>
+                  {" "}
+                  Malayalam
+                </label>
+                <label>
+                  <Field name="language" type='checkbox' value='Kannada' className='form-check-input'></Field>
+                  {" "}
+                  Kannada
+                </label>
               </div>
               <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="aboutUs" class="form-control" id="aboutUs" placeholder="name@example.com"></Field>
