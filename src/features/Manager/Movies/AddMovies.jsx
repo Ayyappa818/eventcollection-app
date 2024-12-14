@@ -44,7 +44,7 @@ function AddMovies() {
                 <label for="movieDuration">MovieDuration</label>
               </div>
               <div class='form-group mb-3 p-2 m-2'>
-                <h6>Select Movie Formats</h6>
+                <h6>Select Movie Type</h6>
                 <label>
                   <Field name="movieType" type='checkbox' value='Drama' className='form-check-input'></Field>
                   {" "}
