@@ -1,13 +1,22 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
-import { useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../../services/MoviesApi';
+import { Link, useParams } from 'react-router-dom';
+import { useGetdeletemoviesMutation, useGetmoviescollectionQuery, useLazyGetmoviescollectionQuery } from '../../../services/MoviesApi';
 
 function MovieCollection() {
   var {isLoading,data}=useGetmoviescollectionQuery();
+  var {id}=useParams();
+  var [DelMFn]=useGetdeletemoviesMutation(id);
   var[MovieFn]=useLazyGetmoviescollectionQuery();
-  useEffect(()=>{
+  // useEffect(()=>{
+  //   MovieFn();
+  // },[MovieFn])
+  // async function MovieDel(id){
+  //   await DelMFn(id);
+  // }
+  function MovieDel(id){
+    DelMFn(id)
     MovieFn();
-  },[MovieFn])
+  }
   console.log(isLoading)
   console.log(data)
   return (
@@ -20,7 +29,7 @@ function MovieCollection() {
              <h1>Movie Collection</h1>
            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 p-2 m-2">
            {
-             !isLoading && data?.map((m)=>{
+             !isLoading && data?.map((m,i)=>{
                  return <div class="col hov p-0 m-2 rounded">
                  <div class="card h-100">
                      <Link  to={`/movie/movieitem/${m._id}`}><img src={m.movieImage} class="card-img-top" style={{height:'300px'}} alt="..."/></Link>
@@ -29,6 +38,7 @@ function MovieCollection() {
                    <p class="card-title">{m.movieCensor}</p>
                    <p class="card-title">{m.releaseDate}</p> 
                  </div>
+                 <button className='btn btn-danger p-2 m-2' onClick={()=>{MovieDel(m._id)}}>DEl</button>
                  </div>
                </div>
              })
