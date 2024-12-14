@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 
 function SideEventbar() {
-  var [toggle,setToggle]=useState(true)
+  var [toggle,setToggle]=useState(true);
   var [searchparams]=useSearchParams();
   var navigate = useNavigate();
-  function Toggle(){
-    setToggle(!toggle)
-  }
+  useEffect(()=>{
+    function Toggle(){
+      setToggle(!toggle);
+    }
+  Toggle();
+  },[])
+  // useEffect(()=>{
+  //   setToggle(prevToggle => !prevToggle);
+  // },[])
   function filtevent(ev,obj){
     searchparams.append(Object.keys(obj)[0],Object.values(obj)[0])
     navigate({
@@ -27,9 +33,9 @@ function SideEventbar() {
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        <button class="btn btn-outline-primary p-1 m-1">Today</button>
-        <button class="btn btn-outline-primary p-1 m-1">Tomorrow</button>
-        <button class="btn btn-outline-primary p-1 m-1">This Weekend</button><br />
+        <button class={toggle?"btn btn-outline-primary p-1 m-1":"btn btn-primary p-1 m-1"}>Today</button>
+        <button class={toggle?"btn btn-outline-primary p-1 m-1":"btn btn-primary p-1 m-1"}>Tomorrow</button>
+        <button class={toggle?"btn btn-outline-primary p-1 m-1":"btn btn-primary p-1 m-1"}>This Weekend</button><br />
         <input type="date" name="" id="" />
       </div>
     </div>
@@ -43,7 +49,8 @@ function SideEventbar() {
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body p-2 m-2">
-        <button class={toggle?"btn btn-outline-primary p-1 m-1":"btn btn-primary p-1 m-1"} onClick={(event)=>{filtevent(event,{language:'Telugu'})}}>Telugu</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtevent(event,{language:'Telugu'})}}>Telugu</button>
+        <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{Toogleevent(event,{language:'Telugu'})}}>Telugu</button>
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtevent(event,{language:'English'})}}>English</button>
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtevent(event,{language:'Tamil'})}}>Tamil</button>
         <button class="btn btn-outline-primary p-1 m-1" onClick={(event)=>{filtevent(event,{language:'Hindi'})}}>Hindi</button>
