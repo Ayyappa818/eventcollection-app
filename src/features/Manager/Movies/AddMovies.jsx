@@ -43,10 +43,93 @@ function AddMovies() {
                 <Field type="text" name="movieDuration" class="form-control" id="movieDuration" placeholder="name@example.com"></Field>
                 <label for="movieDuration">MovieDuration</label>
               </div>
-              <div class="form-floating mb-3 p-2 m-2">
+              <div class='form-group mb-3 p-2 m-2'>
+                <h6>Select Movie Formats</h6>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Drama' className='form-check-input'></Field>
+                  {" "}
+                  Drama
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Action' className='form-check-input'></Field>
+                  {" "}
+                  Action
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Thriller' className='form-check-input'></Field>
+                  {" "}
+                  Thriller
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Comedy' className='form-check-input'></Field>
+                  {" "}
+                  Comedy
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Romantic' className='form-check-input'></Field>
+                  {" "}
+                  Romantic
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Adventure' className='form-check-input'></Field>
+                  {" "}
+                  Adventure
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Animation' className='form-check-input'></Field>
+                  {" "}
+                  Animation
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Anime' className='form-check-input'></Field>
+                  {" "}
+                  Anime
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Crime' className='form-check-input'></Field>
+                  {" "}
+                  Crime
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Fantasy' className='form-check-input'></Field>
+                  {" "}
+                  Fantasy
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Horror' className='form-check-input'></Field>
+                  {" "}
+                  Horror
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Musical' className='form-check-input'></Field>
+                  {" "}
+                  Musical
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Family' className='form-check-input'></Field>
+                  {" "}
+                  Family
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Psychological' className='form-check-input'></Field>
+                  {" "}
+                  Psychological
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Historical' className='form-check-input'></Field>
+                  {" "}
+                  Historical
+                </label>
+                <label>
+                  <Field name="movieType" type='checkbox' value='Sci-Fi' className='form-check-input'></Field>
+                  {" "}
+                  Sci-Fi
+                </label>
+              </div>
+              {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="movieType" class="form-control" id="movieType" placeholder="name@example.com"></Field>
                 <label for="movieType">MovieType</label>
-              </div>
+              </div> */}
               {/* <div class="form-floating mb-3 p-2 m-2">
                 <Field type="text" name="movieCensor" class="form-control" id="movieCensor" placeholder="name@example.com"></Field>
                 <label for="movieCensor">MovieCensor</label>
